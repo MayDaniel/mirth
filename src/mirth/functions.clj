@@ -20,6 +20,7 @@
   (add-word "boolean" #(push-stack (boolean (pop-stack))))
   (add-word "and"     #(push-stack (and (pop-stack) (pop-stack))))
   (add-word "or"      #(push-stack (or (pop-stack) (pop-stack))))
+  (add-word "not"     #(push-stack (not (pop-stack))))
   
   (add-word "swap"    #(swap-stack))
   (add-word "dup"     #(push-stack (peek-stack)))
@@ -32,9 +33,6 @@
   (add-word "=="      #(push-stack (== (pop-stack) (pop-stack))))
   (add-word "<"       #(push-stack (> (pop-stack) (pop-stack))))
   (add-word ">"       #(push-stack (< (pop-stack) (pop-stack))))
-
-  (add-word "PI"      #(push-stack (Math/PI)))
-  (add-word "E"       #(push-stack (Math/E)))
   
   (add-word ".("      #(push-stack (read-str ")")))
   

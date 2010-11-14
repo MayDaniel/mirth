@@ -2,9 +2,7 @@
 
 Mirth is a superficial
 [stack-oriented](http://en.wikipedia.org/wiki/Stack-oriented_programming_language)
-programming language (Forth, Factor, etc.), designed with help from
-(the source of)
-[Boredomist/Froth](https://github.com/boredomist/froth).
+programming language (Forth, Factor, etc.), designed with help from [Boredomist/Froth](https://github.com/boredomist/froth).
 
 ### Running
 
@@ -19,3 +17,16 @@ programming language (Forth, Factor, etc.), designed with help from
 #### Files
 
 * `sh mirth filename`
+
+### Examples
+
+    > 1 2 + .
+    3
+
+    > 5 dup .S
+    [5 5]
+
+    > 55.5 10 swap .S
+    [55.5 10]
+
+    > var x 10
