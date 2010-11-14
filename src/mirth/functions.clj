@@ -15,8 +15,6 @@
   (add-word "alias"   #(alias-word (pop-stack) (pop-stack)))
   
   (add-word "nil"     #(push-stack nil))
-  (add-word "true"    #(push-stack true))
-  (add-word "false"   #(push-stack false))
   (add-word "boolean" #(push-stack (boolean (pop-stack))))
   (add-word "and"     #(push-stack (and (pop-stack) (pop-stack))))
   (add-word "or"      #(push-stack (or (pop-stack) (pop-stack))))

@@ -12,9 +12,10 @@
 
 (defn- next-word []
   (cond
-   (.hasNextInt @reader)   (.nextInt @reader)
-   (.hasNextFloat @reader) (.nextFloat @reader)
-   (.hasNext @reader)      (.next @reader)
+   (.hasNextInt @reader)     (.nextInt @reader)
+   (.hasNextFloat @reader)   (.nextFloat @reader)
+   (.hasNextBoolean @reader) (.nextBoolean @reader)
+   (.hasNext @reader)        (.next @reader)
    :else ""))
 
 (defn read-word []
