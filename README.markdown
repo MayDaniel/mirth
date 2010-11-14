@@ -27,6 +27,6 @@ programming language (Forth, Factor, etc.), designed with help from [boredomist/
     [5 5]
 
     > 55.5 10 swap .S
-    [55.5 10]
+    [10 55.5]
 
     > var x 10
