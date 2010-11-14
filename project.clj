@@ -1,3 +1,2 @@
-(defproject mirth "0.0.1-SNAPSHOT"
-  :description "TODO: add summary of your project"
+(defproject mirth "0.1.0-SNAPSHOT"
   :dependencies [[clojure "1.2.0"]])
