@@ -30,3 +30,8 @@ programming language (Forth, Factor, etc.), designed with help from [boredomist/
     [10 55.5]
 
     > var x 10
+
+    > def sq dup *
+
+    > x sq .
+    100
