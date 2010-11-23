@@ -22,7 +22,7 @@
 (defn mirth []
   (dictionary-defaults)
   (if-let [files (seq *command-line-args*)]
-    (doseq [file files] (mirth-file file))
+    (dorun (map mirth-file files))
     (mirth-repl)))
 
 (mirth)

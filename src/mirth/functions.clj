@@ -36,6 +36,8 @@
   
   (add-word "."       #(println (pop-stack)))
   (add-word ".S"      #(println @stack))
+
+  (add-word ";"       #())
   
   (add-word "clear"   #(clear-stack))
   

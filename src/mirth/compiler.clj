@@ -11,18 +11,17 @@
           [] words))
 
 (defn read-definition []
-  (take-while
-    (complement #{";" :EOF})
-    (repeatedly read-word)))
+  (doall (take-while
+          (complement #{";" :EOF})
+          (repeatedly read-word))))
 
 (defn read-var []
   (repeatedly 2 read-word))
 
 (defn evaluate* []
   (let [word (read-word)]
-    (cond (string? word)   ((:fn (get-word word)))
-          (not= word :EOF) (do (push-stack word)
-                               (recur)))))
+    (cond (string? word)   (do ((:fn (get-word word))) (recur))
+          (not= word :EOF) (do (push-stack word) (recur)))))
 
 (defn evaluate []
   (try (evaluate*)
