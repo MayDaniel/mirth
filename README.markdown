@@ -1,8 +1,6 @@
 ### Mirth
 
-Mirth is a superficial
-[stack-oriented](http://en.wikipedia.org/wiki/Stack-oriented_programming_language)
-programming language (Forth, Factor, etc.).
+Mirth is a simple stack-oriented programming language.
 
 ### Running
 
